@@ -11,7 +11,7 @@ import UIKit
 final class HomeViewController: UIViewController {
     
     private var isHaveData: Bool = false
-    private var dataInfoUser: InfoUser?
+    private var infoUser: InfoUser?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,21 +22,19 @@ final class HomeViewController: UIViewController {
         guard let aboutYouVC = sb.instantiateViewController(withIdentifier: AboutYouViewController.name) as? AboutYouViewController else {
             return
         }
+        
         aboutYouVC.callBack = { [weak self] (process: Int, isHaveData: Bool, data: InfoUser?) in
             guard let wSelf = self else {
                 return
             }
             
             wSelf.isHaveData = isHaveData
-            wSelf.dataInfoUser = data
+            wSelf.infoUser = data
             sender.setTitle("\(process)%", for: .normal)
         }
         
-        if isHaveData {
-            
-        } else {
-            present(aboutYouVC, animated: true, completion: nil)
-        }
+        aboutYouVC.infoUser = infoUser
+        present(aboutYouVC, animated: true, completion: nil)
     }
 }
 

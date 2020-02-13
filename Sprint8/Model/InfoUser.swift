@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class InfoUser: NSObject {
+final class InfoUser {
     var user: User?
     var inputName: String?
     var lastName: String?

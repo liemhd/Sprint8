@@ -23,8 +23,8 @@ final class AboutYouViewController: UIViewController {
     //MARK: Properties
     private var countPageControl: Int = 0
     private var btnActionNext: CustomButton = CustomButton()
-    private var infoUser: InfoUser?
     private var inputNameSubView: InputNameView?
+    var infoUser: InfoUser?
     
     var callBack: ((_ process: Int, _ isHaveData: Bool, _ data: InfoUser?) -> Void)?
     
@@ -39,6 +39,7 @@ final class AboutYouViewController: UIViewController {
     //MARK: Function
     private func addSubViewListUser() {
         if let listUserView = Bundle.main.loadNibNamed(ListUserView.name, owner: self, options: nil)?.first as? ListUserView {
+            listUserView.infoUser = infoUser
             listUserView.frame = viewContent.bounds
             listUserView.listUserDelegate = self
             viewContent.addSubview(listUserView)
