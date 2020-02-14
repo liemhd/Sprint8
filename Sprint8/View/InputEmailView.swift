@@ -91,7 +91,9 @@ extension InputEmailView: UITableViewDataSource {
                         wSelf.tableView.deleteRows(at: [IndexPath(row: 1, section: 0)], with: .none)
                     }
                 } else {
-                    wSelf.tableView.insertRows(at: [IndexPath(row: 1, section: 0)], with: .none)
+                    if wSelf.tableView.numberOfRows(inSection: 0) < 2 {
+                        wSelf.tableView.insertRows(at: [IndexPath(row: 1, section: 0)], with: .none)
+                    }
                 }
             }
             

@@ -11,7 +11,7 @@ import UIKit
 final class ListUserView: UIView {
     
     //MARK: Outlet
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     //MARK: Properties
     private let dataUserArr: [User] = [User(name: "Tuan(Mr.)", avatar: #imageLiteral(resourceName: "imv_user1")),
@@ -19,19 +19,22 @@ final class ListUserView: UIView {
                                        User(name: "Nona(Ms.)", avatar: #imageLiteral(resourceName: "imv_user3"))]
     private var indexSelected: IndexPath?
     var listUserDelegate: SubViewDelegate?
-    var infoUser: InfoUser?
+    var infoUser: InfoUser? = nil {
+        didSet {
+            for i in 0..<dataUserArr.count {
+                if dataUserArr[i].name == infoUser?.user?.name &&
+                    dataUserArr[i].avatar == infoUser?.user?.avatar {
+                    indexSelected = IndexPath(row: i, section: 0)
+                }
+            }
+        }
+    }
     
     //MARK: View Lyfe Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         
         configUITableView()
-        for i in 0..<dataUserArr.count {
-            if dataUserArr[i].name == infoUser?.user?.name &&
-                dataUserArr[i].avatar == infoUser?.user?.avatar {
-                indexSelected = IndexPath(row: i, section: 0)
-            }
-        }
     }
     
     //MARK: Function

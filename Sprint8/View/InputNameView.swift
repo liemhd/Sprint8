@@ -10,17 +10,23 @@ import UIKit
 
 final class InputNameView: UIView {
     
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
-    private var dataTextField: [TextField] = []
+    private var dataTextField: [TextField] =
+        [TextField(tag: 0, title: "Nama depan", placeHolder: "Tulis nama di sini", countCharacter: 20, content: ""),
+        TextField(tag: 1, title: "Nama belakang", placeHolder: "Tulis nama di sini", countCharacter: 20, content: "")]
     var inputNameDelegate: SubViewDelegate?
-    var infoUser: InfoUser?
+    var infoUser: InfoUser? = nil {
+        didSet {
+            dataTextField[0].content = infoUser?.inputName
+            dataTextField[1].content = infoUser?.lastName
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         configView()
-        countTextField()
     }
     
     private func configView() {
@@ -33,11 +39,6 @@ final class InputNameView: UIView {
         tableView.register(UINib(nibName: InputDataTableViewCell.name, bundle: nil), forCellReuseIdentifier: InputDataTableViewCell.name)
         
         tableView.register(UINib(nibName: HeaderView.name, bundle: nil), forHeaderFooterViewReuseIdentifier: HeaderView.name)
-    }
-    
-    private func countTextField() {
-        dataTextField = [TextField(tag: 0, title: "Nama depan", placeHolder: "Tulis nama di sini", countCharacter: 20, content: ""),
-                         TextField(tag: 1, title: "Nama belakang", placeHolder: "Tulis nama di sini", countCharacter: 20, content: "")]
     }
 }
 
@@ -63,6 +64,11 @@ extension InputNameView: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.fillData(data: dataTextField[indexPath.row])
+        cell.haveData()
+        
+        if cell.textFieldName.text!.isEmpty {
+            inputNameDelegate?.addBtnBeri(isHiddenBtnNext: false, infoUser: nil)
+        }
         
         cell.callBack = { [weak self] ( _ ,isEmail: Bool, content: String) in
             guard let wSelf = self else {

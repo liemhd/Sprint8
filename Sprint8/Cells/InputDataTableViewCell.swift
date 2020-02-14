@@ -12,7 +12,7 @@ final class InputDataTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var labelTitle: UILabel!
     @IBOutlet private weak var labelCharCount: UILabel!
-    @IBOutlet private weak var textFieldName: UITextField!
+    @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet private weak var viewName: UIView!
     @IBOutlet private weak var imvTick: UIImageView!
     @IBOutlet private weak var lableMaxCharater: UILabel!
@@ -102,8 +102,19 @@ final class InputDataTableViewCell: UITableViewCell {
     func fillData(data: TextField) {
         labelTitle.text = data.title
         textFieldName.tag = data.tag ?? 0
+        textFieldName.text = data.content
         textFieldName.placeholder = data.placeHolder
         countCharacter = data.countCharacter ?? 0
         labelCharCount.text = "\(countCharacter)/\(countCharacter)"
+    }
+    
+    func haveData() {
+        guard let inputText = textFieldName.text?.count else {
+            return
+        }
+        
+        if inputText > 0 {
+            inputTextTrue()
+        }
     }
 }
