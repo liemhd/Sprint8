@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InputYourIDNumberView" customModule="Sprint8" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="834"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDv-LL-dWR">
+                    <rect key="frame" x="0.0" y="44" width="434" height="756"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="q61-5L-jzf">
+                            <rect key="frame" x="0.0" y="0.0" width="434" height="756"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="q61-5L-jzf" secondAttribute="bottom" id="Xmx-fI-tSl"/>
+                        <constraint firstItem="q61-5L-jzf" firstAttribute="top" secondItem="eDv-LL-dWR" secondAttribute="top" id="iu3-Fy-AKe"/>
+                        <constraint firstAttribute="trailing" secondItem="q61-5L-jzf" secondAttribute="trailing" id="mVt-y1-Bsd"/>
+                        <constraint firstItem="q61-5L-jzf" firstAttribute="leading" secondItem="eDv-LL-dWR" secondAttribute="leading" id="xON-c0-8Ci"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eDv-LL-dWR" secondAttribute="trailing" id="6I9-lu-S2X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eDv-LL-dWR" secondAttribute="bottom" id="Gdt-mf-Sft"/>
+                <constraint firstItem="eDv-LL-dWR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="T5t-TM-Kr6"/>
+                <constraint firstItem="eDv-LL-dWR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bQs-zx-eaM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="tableView" destination="q61-5L-jzf" id="nI7-Js-hXZ"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="83.705357142857139"/>
+        </view>
+    </objects>
+</document>

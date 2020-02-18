@@ -15,7 +15,7 @@ final class InputNameView: UIView {
     private var dataTextField: [TextField] =
         [TextField(tag: 0, title: "Nama depan", placeHolder: "Tulis nama di sini", countCharacter: 20, content: ""),
         TextField(tag: 1, title: "Nama belakang", placeHolder: "Tulis nama di sini", countCharacter: 20, content: "")]
-    var inputNameDelegate: SubViewDelegate?
+    var inputNameDelegate: SubViewAboutYouDelegate?
     var infoUser: InfoUser? = nil {
         didSet {
             dataTextField[0].content = infoUser?.inputName
@@ -67,7 +67,7 @@ extension InputNameView: UITableViewDataSource {
         cell.haveData()
         
         if cell.textFieldName.text!.isEmpty {
-            inputNameDelegate?.addBtnBeri(isHiddenBtnNext: false, infoUser: nil)
+            inputNameDelegate?.addBtnNext(isHiddenBtnNext: false, infoUser: nil)
         }
         
         cell.callBack = { [weak self] ( _ ,isEmail: Bool, content: String) in
@@ -81,11 +81,11 @@ extension InputNameView: UITableViewDataSource {
             
             for obj in wSelf.dataTextField {
                 if obj.content?.isEmpty ?? true {
-                    wSelf.inputNameDelegate?.addBtnBeri(isHiddenBtnNext: false, infoUser: nil)
+                    wSelf.inputNameDelegate?.addBtnNext(isHiddenBtnNext: false, infoUser: nil)
                     return
                 }
             }
-            wSelf.inputNameDelegate?.addBtnBeri(isHiddenBtnNext: true, infoUser: wSelf.infoUser)
+            wSelf.inputNameDelegate?.addBtnNext(isHiddenBtnNext: true, infoUser: wSelf.infoUser)
         }
         
         return cell

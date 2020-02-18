@@ -77,7 +77,7 @@ final class InputDataTableViewCell: UITableViewCell {
             
         }
         
-        contentTextField = textField.text ?? Constants.empty
+        contentTextField = inputText
         labelCharCount.text = "\(countCharacter - countCharacterTextField)/\(countCharacter)"
         
     }

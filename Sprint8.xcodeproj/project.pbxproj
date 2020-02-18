@@ -15,8 +15,8 @@
 		181065D723E91552005C62A1 /* AboutYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181065D623E91552005C62A1 /* AboutYouViewController.swift */; };
 		181065D923E9187E005C62A1 /* InputNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181065D823E9187E005C62A1 /* InputNameView.swift */; };
 		181065DB23E91889005C62A1 /* InputNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181065DA23E91889005C62A1 /* InputNameView.xib */; };
-		181065DF23E91A8E005C62A1 /* TentangAndaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181065DD23E91A8E005C62A1 /* TentangAndaTableViewCell.swift */; };
-		181065E023E91A8E005C62A1 /* TentangAndaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181065DE23E91A8E005C62A1 /* TentangAndaTableViewCell.xib */; };
+		181065DF23E91A8E005C62A1 /* YourGreetingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181065DD23E91A8E005C62A1 /* YourGreetingTableViewCell.swift */; };
+		181065E023E91A8E005C62A1 /* YourGreetingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181065DE23E91A8E005C62A1 /* YourGreetingTableViewCell.xib */; };
 		181065E323E91C31005C62A1 /* NSObject + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181065E223E91C31005C62A1 /* NSObject + Extension.swift */; };
 		181065E523E91C48005C62A1 /* UIVIew + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181065E423E91C48005C62A1 /* UIVIew + Extension.swift */; };
 		181065E823E91D02005C62A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181065E723E91D02005C62A1 /* User.swift */; };
@@ -33,17 +33,30 @@
 		187E16C723E9611B0007DE3C /* ListUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E16C623E9611B0007DE3C /* ListUserView.swift */; };
 		187E16C923E961290007DE3C /* ListUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E16C823E961290007DE3C /* ListUserView.xib */; };
 		18865BA323F3A1EA00EB668B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18865BA223F3A1EA00EB668B /* CustomButton.swift */; };
+		188CDC3923F82180008FF3FF /* AddressDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CDC3723F82180008FF3FF /* AddressDetailTableViewCell.swift */; };
+		188CDC3A23F82180008FF3FF /* AddressDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188CDC3823F82180008FF3FF /* AddressDetailTableViewCell.xib */; };
 		18A3F64123F4F0E0007B2964 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3F64023F4F0E0007B2964 /* HeaderView.swift */; };
 		18A3F64323F4F11E007B2964 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A3F64223F4F11E007B2964 /* HeaderView.xib */; };
 		18A5AED023F1092200BDCE63 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5AECF23F1092200BDCE63 /* String + Extension.swift */; };
 		18A5AED223F1134700BDCE63 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5AED123F1134700BDCE63 /* UIViewController + Extension.swift */; };
 		18AA88DF23F6573E00ACD5B5 /* AddInfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA88DE23F6573E00ACD5B5 /* AddInfomationViewController.swift */; };
+		18AA88E623F65BA600ACD5B5 /* InputYourIDNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA88E523F65BA600ACD5B5 /* InputYourIDNumberView.swift */; };
+		18AA88E823F65BC000ACD5B5 /* InputYourIDNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA88E723F65BC000ACD5B5 /* InputYourIDNumberView.xib */; };
+		18AA88EB23F65DAF00ACD5B5 /* IdCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA88E923F65DAF00ACD5B5 /* IdCardTableViewCell.swift */; };
+		18AA88EC23F65DAF00ACD5B5 /* IdCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA88EA23F65DAF00ACD5B5 /* IdCardTableViewCell.xib */; };
+		18AA88EE23F6884000ACD5B5 /* YourAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA88ED23F6884000ACD5B5 /* YourAddressView.swift */; };
+		18AA88F023F6886100ACD5B5 /* YourAddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA88EF23F6886100ACD5B5 /* YourAddressView.xib */; };
+		18AA88F323F68B0000ACD5B5 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA88F123F68B0000ACD5B5 /* AddressTableViewCell.swift */; };
+		18AA88F423F68B0000ACD5B5 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA88F223F68B0000ACD5B5 /* AddressTableViewCell.xib */; };
+		18AA88F723F695F800ACD5B5 /* ProvinceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA88F623F695F800ACD5B5 /* ProvinceView.swift */; };
+		18AA88F923F6960F00ACD5B5 /* ProvinceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA88F823F6960F00ACD5B5 /* ProvinceView.xib */; };
 		18E9829923EA5EE600C7A11D /* InputEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9829823EA5EE600C7A11D /* InputEmailView.swift */; };
 		18E9829B23EA5EF600C7A11D /* InputEmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E9829A23EA5EF600C7A11D /* InputEmailView.xib */; };
 		18E9829D23EAA9BD00C7A11D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9829C23EAA9BD00C7A11D /* TextField.swift */; };
 		18E982A023EAB3A600C7A11D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9829F23EAB3A600C7A11D /* Constants.swift */; };
 		18E982A323EACF8F00C7A11D /* VerificationCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E982A123EACF8F00C7A11D /* VerificationCodeTableViewCell.swift */; };
 		18E982A423EACF8F00C7A11D /* VerificationCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E982A223EACF8F00C7A11D /* VerificationCodeTableViewCell.xib */; };
+		18ED8D4023FB7C340015E7D3 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED8D3F23FB7C340015E7D3 /* InterestsViewController.swift */; };
 		69C1E792484FDD757E250868 /* Pods_Sprint8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100D62A7942AA78D2FB4B5D5 /* Pods_Sprint8.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +72,8 @@
 		181065D623E91552005C62A1 /* AboutYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutYouViewController.swift; sourceTree = "<group>"; };
 		181065D823E9187E005C62A1 /* InputNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameView.swift; sourceTree = "<group>"; };
 		181065DA23E91889005C62A1 /* InputNameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputNameView.xib; sourceTree = "<group>"; };
-		181065DD23E91A8E005C62A1 /* TentangAndaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentangAndaTableViewCell.swift; sourceTree = "<group>"; };
-		181065DE23E91A8E005C62A1 /* TentangAndaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TentangAndaTableViewCell.xib; sourceTree = "<group>"; };
+		181065DD23E91A8E005C62A1 /* YourGreetingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGreetingTableViewCell.swift; sourceTree = "<group>"; };
+		181065DE23E91A8E005C62A1 /* YourGreetingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourGreetingTableViewCell.xib; sourceTree = "<group>"; };
 		181065E223E91C31005C62A1 /* NSObject + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extension.swift"; sourceTree = "<group>"; };
 		181065E423E91C48005C62A1 /* UIVIew + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew + Extension.swift"; sourceTree = "<group>"; };
 		181065E723E91D02005C62A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -77,17 +90,30 @@
 		187E16C623E9611B0007DE3C /* ListUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserView.swift; sourceTree = "<group>"; };
 		187E16C823E961290007DE3C /* ListUserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUserView.xib; sourceTree = "<group>"; };
 		18865BA223F3A1EA00EB668B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		188CDC3723F82180008FF3FF /* AddressDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailTableViewCell.swift; sourceTree = "<group>"; };
+		188CDC3823F82180008FF3FF /* AddressDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressDetailTableViewCell.xib; sourceTree = "<group>"; };
 		18A3F64023F4F0E0007B2964 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		18A3F64223F4F11E007B2964 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		18A5AECF23F1092200BDCE63 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		18A5AED123F1134700BDCE63 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		18AA88DE23F6573E00ACD5B5 /* AddInfomationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfomationViewController.swift; sourceTree = "<group>"; };
+		18AA88E523F65BA600ACD5B5 /* InputYourIDNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputYourIDNumberView.swift; sourceTree = "<group>"; };
+		18AA88E723F65BC000ACD5B5 /* InputYourIDNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputYourIDNumberView.xib; sourceTree = "<group>"; };
+		18AA88E923F65DAF00ACD5B5 /* IdCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardTableViewCell.swift; sourceTree = "<group>"; };
+		18AA88EA23F65DAF00ACD5B5 /* IdCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdCardTableViewCell.xib; sourceTree = "<group>"; };
+		18AA88ED23F6884000ACD5B5 /* YourAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAddressView.swift; sourceTree = "<group>"; };
+		18AA88EF23F6886100ACD5B5 /* YourAddressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourAddressView.xib; sourceTree = "<group>"; };
+		18AA88F123F68B0000ACD5B5 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		18AA88F223F68B0000ACD5B5 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		18AA88F623F695F800ACD5B5 /* ProvinceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceView.swift; sourceTree = "<group>"; };
+		18AA88F823F6960F00ACD5B5 /* ProvinceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProvinceView.xib; sourceTree = "<group>"; };
 		18E9829823EA5EE600C7A11D /* InputEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEmailView.swift; sourceTree = "<group>"; };
 		18E9829A23EA5EF600C7A11D /* InputEmailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputEmailView.xib; sourceTree = "<group>"; };
 		18E9829C23EAA9BD00C7A11D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		18E9829F23EAB3A600C7A11D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18E982A123EACF8F00C7A11D /* VerificationCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeTableViewCell.swift; sourceTree = "<group>"; };
 		18E982A223EACF8F00C7A11D /* VerificationCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationCodeTableViewCell.xib; sourceTree = "<group>"; };
+		18ED8D3F23FB7C340015E7D3 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		48D1E059905CBE262FF31F6E /* Pods-Sprint8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprint8.debug.xcconfig"; path = "Target Support Files/Pods-Sprint8/Pods-Sprint8.debug.xcconfig"; sourceTree = "<group>"; };
 		728561E58404B1FC64F6D87E /* Pods-Sprint8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sprint8.release.xcconfig"; path = "Target Support Files/Pods-Sprint8/Pods-Sprint8.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,12 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				18A3F63F23F4F0BE007B2964 /* HeaderView */,
-				187E16C623E9611B0007DE3C /* ListUserView.swift */,
-				187E16C823E961290007DE3C /* ListUserView.xib */,
-				181065D823E9187E005C62A1 /* InputNameView.swift */,
-				181065DA23E91889005C62A1 /* InputNameView.xib */,
-				18E9829823EA5EE600C7A11D /* InputEmailView.swift */,
-				18E9829A23EA5EF600C7A11D /* InputEmailView.xib */,
+				18AA88E123F65AC100ACD5B5 /* AboutYou */,
+				18AA88E223F65ADE00ACD5B5 /* AddInfomation */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +179,7 @@
 				181065C023E90D9F005C62A1 /* HomeViewController.swift */,
 				181065D623E91552005C62A1 /* AboutYouViewController.swift */,
 				18AA88DE23F6573E00ACD5B5 /* AddInfomationViewController.swift */,
+				18ED8D3F23FB7C340015E7D3 /* InterestsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -164,16 +187,8 @@
 		181065DC23E91A61005C62A1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				181065DD23E91A8E005C62A1 /* TentangAndaTableViewCell.swift */,
-				181065DE23E91A8E005C62A1 /* TentangAndaTableViewCell.xib */,
-				181065E923E94EFB005C62A1 /* InputDataTableViewCell.swift */,
-				181065EA23E94EFB005C62A1 /* InputDataTableViewCell.xib */,
-				18E982A123EACF8F00C7A11D /* VerificationCodeTableViewCell.swift */,
-				18E982A223EACF8F00C7A11D /* VerificationCodeTableViewCell.xib */,
-				187C44D123EBF5F80080C103 /* InputVerificationCodeTableViewCell.swift */,
-				187C44D223EBF5F80080C103 /* InputVerificationCodeTableViewCell.xib */,
-				18246D0023F28573001B2B38 /* EmailSuccesTableViewCell.swift */,
-				18246D0123F28573001B2B38 /* EmailSuccesTableViewCell.xib */,
+				18AA88E323F65B1A00ACD5B5 /* AboutYou */,
+				18AA88E423F65B3400ACD5B5 /* AddInfomation */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -229,6 +244,70 @@
 				18A3F64223F4F11E007B2964 /* HeaderView.xib */,
 			);
 			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		18AA88E123F65AC100ACD5B5 /* AboutYou */ = {
+			isa = PBXGroup;
+			children = (
+				187E16C623E9611B0007DE3C /* ListUserView.swift */,
+				187E16C823E961290007DE3C /* ListUserView.xib */,
+				181065D823E9187E005C62A1 /* InputNameView.swift */,
+				181065DA23E91889005C62A1 /* InputNameView.xib */,
+				18E9829823EA5EE600C7A11D /* InputEmailView.swift */,
+				18E9829A23EA5EF600C7A11D /* InputEmailView.xib */,
+			);
+			path = AboutYou;
+			sourceTree = "<group>";
+		};
+		18AA88E223F65ADE00ACD5B5 /* AddInfomation */ = {
+			isa = PBXGroup;
+			children = (
+				18AA88E523F65BA600ACD5B5 /* InputYourIDNumberView.swift */,
+				18AA88E723F65BC000ACD5B5 /* InputYourIDNumberView.xib */,
+				18AA88ED23F6884000ACD5B5 /* YourAddressView.swift */,
+				18AA88EF23F6886100ACD5B5 /* YourAddressView.xib */,
+				18AA88F523F695A100ACD5B5 /* ProvinceView */,
+			);
+			path = AddInfomation;
+			sourceTree = "<group>";
+		};
+		18AA88E323F65B1A00ACD5B5 /* AboutYou */ = {
+			isa = PBXGroup;
+			children = (
+				181065DD23E91A8E005C62A1 /* YourGreetingTableViewCell.swift */,
+				181065DE23E91A8E005C62A1 /* YourGreetingTableViewCell.xib */,
+				181065E923E94EFB005C62A1 /* InputDataTableViewCell.swift */,
+				181065EA23E94EFB005C62A1 /* InputDataTableViewCell.xib */,
+				18E982A123EACF8F00C7A11D /* VerificationCodeTableViewCell.swift */,
+				18E982A223EACF8F00C7A11D /* VerificationCodeTableViewCell.xib */,
+				187C44D123EBF5F80080C103 /* InputVerificationCodeTableViewCell.swift */,
+				187C44D223EBF5F80080C103 /* InputVerificationCodeTableViewCell.xib */,
+				18246D0023F28573001B2B38 /* EmailSuccesTableViewCell.swift */,
+				18246D0123F28573001B2B38 /* EmailSuccesTableViewCell.xib */,
+			);
+			path = AboutYou;
+			sourceTree = "<group>";
+		};
+		18AA88E423F65B3400ACD5B5 /* AddInfomation */ = {
+			isa = PBXGroup;
+			children = (
+				18AA88E923F65DAF00ACD5B5 /* IdCardTableViewCell.swift */,
+				18AA88EA23F65DAF00ACD5B5 /* IdCardTableViewCell.xib */,
+				18AA88F123F68B0000ACD5B5 /* AddressTableViewCell.swift */,
+				18AA88F223F68B0000ACD5B5 /* AddressTableViewCell.xib */,
+				188CDC3723F82180008FF3FF /* AddressDetailTableViewCell.swift */,
+				188CDC3823F82180008FF3FF /* AddressDetailTableViewCell.xib */,
+			);
+			path = AddInfomation;
+			sourceTree = "<group>";
+		};
+		18AA88F523F695A100ACD5B5 /* ProvinceView */ = {
+			isa = PBXGroup;
+			children = (
+				18AA88F623F695F800ACD5B5 /* ProvinceView.swift */,
+				18AA88F823F6960F00ACD5B5 /* ProvinceView.xib */,
+			);
+			path = ProvinceView;
 			sourceTree = "<group>";
 		};
 		18E9829E23EAB39300C7A11D /* Constants */ = {
@@ -318,16 +397,22 @@
 			files = (
 				18A3F64323F4F11E007B2964 /* HeaderView.xib in Resources */,
 				181065C923E90DA0005C62A1 /* LaunchScreen.storyboard in Resources */,
+				18AA88F423F68B0000ACD5B5 /* AddressTableViewCell.xib in Resources */,
 				181065C623E90DA0005C62A1 /* Assets.xcassets in Resources */,
 				18E982A423EACF8F00C7A11D /* VerificationCodeTableViewCell.xib in Resources */,
 				187C44D423EBF5F80080C103 /* InputVerificationCodeTableViewCell.xib in Resources */,
+				18AA88F023F6886100ACD5B5 /* YourAddressView.xib in Resources */,
 				181065C423E90D9F005C62A1 /* Main.storyboard in Resources */,
 				18246D0323F28573001B2B38 /* EmailSuccesTableViewCell.xib in Resources */,
 				181065EC23E94EFB005C62A1 /* InputDataTableViewCell.xib in Resources */,
 				18E9829B23EA5EF600C7A11D /* InputEmailView.xib in Resources */,
 				181065DB23E91889005C62A1 /* InputNameView.xib in Resources */,
-				181065E023E91A8E005C62A1 /* TentangAndaTableViewCell.xib in Resources */,
+				18AA88EC23F65DAF00ACD5B5 /* IdCardTableViewCell.xib in Resources */,
+				181065E023E91A8E005C62A1 /* YourGreetingTableViewCell.xib in Resources */,
 				187E16C923E961290007DE3C /* ListUserView.xib in Resources */,
+				188CDC3A23F82180008FF3FF /* AddressDetailTableViewCell.xib in Resources */,
+				18AA88F923F6960F00ACD5B5 /* ProvinceView.xib in Resources */,
+				18AA88E823F65BC000ACD5B5 /* InputYourIDNumberView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +473,7 @@
 				18E9829923EA5EE600C7A11D /* InputEmailView.swift in Sources */,
 				18E982A323EACF8F00C7A11D /* VerificationCodeTableViewCell.swift in Sources */,
 				181065C123E90D9F005C62A1 /* HomeViewController.swift in Sources */,
+				18AA88F323F68B0000ACD5B5 /* AddressTableViewCell.swift in Sources */,
 				181065BF23E90D9F005C62A1 /* AppDelegate.swift in Sources */,
 				18E9829D23EAA9BD00C7A11D /* TextField.swift in Sources */,
 				18246D0223F28573001B2B38 /* EmailSuccesTableViewCell.swift in Sources */,
@@ -400,10 +486,16 @@
 				187C44D323EBF5F80080C103 /* InputVerificationCodeTableViewCell.swift in Sources */,
 				18A5AED223F1134700BDCE63 /* UIViewController + Extension.swift in Sources */,
 				18246CFD23F25311001B2B38 /* UIColor + Extension.swift in Sources */,
+				18AA88EE23F6884000ACD5B5 /* YourAddressView.swift in Sources */,
 				18E982A023EAB3A600C7A11D /* Constants.swift in Sources */,
 				187C44D023EBF4E10080C103 /* Protocol.swift in Sources */,
-				181065DF23E91A8E005C62A1 /* TentangAndaTableViewCell.swift in Sources */,
+				18ED8D4023FB7C340015E7D3 /* InterestsViewController.swift in Sources */,
+				188CDC3923F82180008FF3FF /* AddressDetailTableViewCell.swift in Sources */,
+				18AA88E623F65BA600ACD5B5 /* InputYourIDNumberView.swift in Sources */,
+				18AA88EB23F65DAF00ACD5B5 /* IdCardTableViewCell.swift in Sources */,
+				181065DF23E91A8E005C62A1 /* YourGreetingTableViewCell.swift in Sources */,
 				181065EB23E94EFB005C62A1 /* InputDataTableViewCell.swift in Sources */,
+				18AA88F723F695F800ACD5B5 /* ProvinceView.swift in Sources */,
 				18A5AED023F1092200BDCE63 /* String + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

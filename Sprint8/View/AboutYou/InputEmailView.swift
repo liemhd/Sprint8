@@ -14,7 +14,7 @@ final class InputEmailView: UIView {
     
     private var dataTextField: [TextField] = [TextField(tag: 3, title: "Alamat email aktif", placeHolder: "Tulis email di sini", countCharacter: 30, content: "")]
     private var typeCell: String = ""
-    var inputEmailDelegate: SubViewDelegate?
+    var inputEmailDelegate: SubViewAboutYouDelegate?
     var infoUser: InfoUser?
     
     override func awakeFromNib() {

@@ -18,6 +18,14 @@ struct Constants {
     public static let verificationCode = "Verification Code"
     public static let emailSucces = "Email Succes"
     
+    //additional information
+    public static let titleHeaderYourIdNumber = "No identitas anda"
+    public static let titleHeaderYourAddress = "Alamat Anda"
+    
+    //Interests
+    public static let chooseMoreThanOne = "Pilih lebih dari satu"
+    public static let maxChoose = "Maksiman 5 kategori"
+    
     //Title Button
     public static let completed = "Selesai"
     public static let next = "Berikutnya"

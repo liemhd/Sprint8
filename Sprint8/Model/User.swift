@@ -8,7 +8,13 @@
 
 import UIKit
 
-struct User {
+final class User {
     var name: String?
     var avatar: UIImage?
+    var isSelected: Bool = false
+    
+    init(name: String?, avatar: UIImage?, isSelected: Bool = false) {
+        self.name = name
+        self.avatar = avatar
+    }
 }

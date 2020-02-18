@@ -23,7 +23,6 @@ final class AboutYouViewController: UIViewController {
     //MARK: - Properties
     private var countPageControl: Int = 0
     private var btnActionNext: CustomButton = CustomButton()
-    private var inputNameSubView: InputNameView?
     var infoUser: InfoUser?
     
     var callBack: ((_ process: Int, _ isHaveData: Bool, _ data: InfoUser?) -> Void)?
@@ -185,13 +184,13 @@ final class AboutYouViewController: UIViewController {
 }
 
 //MARK: - SubViewDelegate
-extension AboutYouViewController: SubViewDelegate {
+extension AboutYouViewController: SubViewAboutYouDelegate {
     func hidenBtnIgnore(infoUser: InfoUser?) {
         btnIgnore.isHidden = true
         addBtnNext(title: Constants.completed, infoUser: infoUser)
     }
     
-    func addBtnBeri(isHiddenBtnNext: Bool, infoUser: InfoUser?) {
+    func addBtnNext(isHiddenBtnNext: Bool, infoUser: InfoUser?) {
         if isHiddenBtnNext {
             addBtnNext(title: Constants.next, infoUser: infoUser)
         } else {

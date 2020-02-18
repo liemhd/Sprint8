@@ -36,5 +36,41 @@ final class HomeViewController: UIViewController {
         aboutYouVC.infoUser = infoUser
         present(aboutYouVC, animated: true, completion: nil)
     }
+    
+    @IBAction private func btnActionAddInfomation(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let addInfoVC = sb.instantiateViewController(withIdentifier: AddInfomationViewController.name) as? AddInfomationViewController else {
+            return
+        }
+        addInfoVC.callBack = { [weak self] (process: Int) in
+            guard let _ = self else {
+                return
+            }
+            
+            sender.setTitle("\(process)%", for: .normal)
+        }
+        
+        present(addInfoVC, animated: true, completion: nil)
+    }
+    
+    @IBAction private func btnActionInterests(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let interestVC = sb.instantiateViewController(withIdentifier: InterestsViewController.name) as? InterestsViewController else {
+            return
+        }
+        
+        interestVC.callBack = { [weak self] (userArr: [User]) in
+            guard let _ = self else {
+                return
+            }
+            
+            if userArr.count > 0 {
+                print(userArr)
+                sender.setTitle("100%", for: .normal)
+            }
+        }
+        
+        present(interestVC, animated: true, completion: nil)
+    }
 }
 

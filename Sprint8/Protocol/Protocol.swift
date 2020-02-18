@@ -8,7 +8,15 @@
 
 import Foundation
 
-protocol SubViewDelegate {
-    func addBtnBeri(isHiddenBtnNext: Bool, infoUser: InfoUser?)
+protocol SubViewAboutYouDelegate {
+    func addBtnNext(isHiddenBtnNext: Bool, infoUser: InfoUser?)
     func hidenBtnIgnore(infoUser: InfoUser?)
+}
+
+protocol SubViewAddInfoDelegate {
+    func addBtnNext(isHiddenBtnNext: Bool)
+}
+
+protocol AddressDelegate {
+    func passDataProvince(province: String)
 }

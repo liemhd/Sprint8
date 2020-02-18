@@ -1,5 +1,5 @@
 //
-//  TentangAndaTableViewCell.swift
+//  YourGreetingTableViewCell.swift
 //  Sprint8
 //
 //  Created by Duy Liêm on 2/4/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class TentangAndaTableViewCell: UITableViewCell {
+final class YourGreetingTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var viewInfoUser: UIView!
     @IBOutlet private weak var imvAvatar: UIImageView!
@@ -18,6 +18,7 @@ final class TentangAndaTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.addShadow()
         viewInfoUser.layer.masksToBounds = true
         imvSelected.tintColor = UIColor(hexString: Constants.colorImvSuccess)
     }
@@ -25,10 +26,7 @@ final class TentangAndaTableViewCell: UITableViewCell {
     func fillData(user: User) {
         imvAvatar.image = user.avatar
         labelName.text = user.name
-    }
-    
-    func isSelecteded(isSelected: Bool) {
-        if isSelected {
+        if user.isSelected {
             viewInfoUser.borderColor = UIColor(hexString: Constants.borderColorUser)
             imvSelected.isHidden = false
         } else {

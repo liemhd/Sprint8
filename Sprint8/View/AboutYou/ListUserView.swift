@@ -17,14 +17,13 @@ final class ListUserView: UIView {
     private let dataUserArr: [User] = [User(name: "Tuan(Mr.)", avatar: #imageLiteral(resourceName: "imv_user1")),
                                        User(name: "Nyonya(Mrs.)", avatar: #imageLiteral(resourceName: "imv_user2")),
                                        User(name: "Nona(Ms.)", avatar: #imageLiteral(resourceName: "imv_user3"))]
-    private var indexSelected: IndexPath?
-    var listUserDelegate: SubViewDelegate?
+    var listUserDelegate: SubViewAboutYouDelegate?
     var infoUser: InfoUser? = nil {
         didSet {
             for i in 0..<dataUserArr.count {
                 if dataUserArr[i].name == infoUser?.user?.name &&
                     dataUserArr[i].avatar == infoUser?.user?.avatar {
-                    indexSelected = IndexPath(row: i, section: 0)
+                    dataUserArr[i].isSelected = infoUser?.user?.isSelected ?? false
                 }
             }
         }
@@ -45,7 +44,7 @@ final class ListUserView: UIView {
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.estimatedSectionHeaderHeight = 1
         
-        tableView.register(UINib(nibName: TentangAndaTableViewCell.name, bundle: nil), forCellReuseIdentifier: TentangAndaTableViewCell.name)
+        tableView.register(UINib(nibName: YourGreetingTableViewCell.name, bundle: nil), forCellReuseIdentifier: YourGreetingTableViewCell.name)
         
         tableView.register(UINib(nibName: HeaderView.name, bundle: nil), forHeaderFooterViewReuseIdentifier: HeaderView.name)
     }
@@ -62,9 +61,13 @@ extension ListUserView: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let user = User(name: dataUserArr[indexPath.row].name, avatar: dataUserArr[indexPath.row].avatar)
-        listUserDelegate?.addBtnBeri(isHiddenBtnNext: true, infoUser: InfoUser(user: user, inputName: nil, lastName: nil, email: nil))
-        indexSelected = indexPath
+        for obj in dataUserArr {
+            obj.isSelected = false
+        }
+        
+        dataUserArr[indexPath.row].isSelected = true
+        listUserDelegate?.addBtnNext(isHiddenBtnNext: true, infoUser: InfoUser(user: dataUserArr[indexPath.row], inputName: nil, lastName: nil, email: nil))
+        
         tableView.reloadData()
     }
 }
@@ -76,17 +79,11 @@ extension ListUserView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TentangAndaTableViewCell.name, for: indexPath) as? TentangAndaTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: YourGreetingTableViewCell.name, for: indexPath) as? YourGreetingTableViewCell else {
             return UITableViewCell()
         }
-        cell.addShadow()
+        
         cell.fillData(user: dataUserArr[indexPath.row])
-        
-        cell.isSelecteded(isSelected: false)
-        
-        if indexPath == indexSelected {
-            cell.isSelecteded(isSelected: true)
-        }
         
         return cell
     }
