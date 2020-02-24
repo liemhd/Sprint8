@@ -26,6 +26,10 @@ struct Constants {
     public static let chooseMoreThanOne = "Pilih lebih dari satu"
     public static let maxChoose = "Maksiman 5 kategori"
     
+    //Login
+    public static let titleHeaderLogin = "Akun media sosial Anda"
+    public static let subTitleHeaderLogin = "Hubungkan satu akun atau lebih"
+    
     //Title Button
     public static let completed = "Selesai"
     public static let next = "Berikutnya"
@@ -41,4 +45,7 @@ struct Constants {
     
     //Time Resend Code
     public static let timeResendCode: Int = 300
+    
+    //Type View
+    public static let login = "Login"
 }

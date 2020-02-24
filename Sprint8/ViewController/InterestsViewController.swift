@@ -43,7 +43,7 @@ final class InterestsViewController: UIViewController {
             User(name: "Musik", avatar: #imageLiteral(resourceName: "imv_music")),
             User(name: "Film dan Hiburan", avatar: #imageLiteral(resourceName: "imv_filmAndEntertainment")),
             User(name: "Pendidikan", avatar: #imageLiteral(resourceName: "imv_education")),
-            User(name: "Kuliner", avatar: #imageLiteral(resourceName: "imv_culinary_am_thuc")),
+            User(name: "Kuliner", avatar: #imageLiteral(resourceName: "imv_culinary")),
             User(name: "Game", avatar: #imageLiteral(resourceName: "imv_game")),
             User(name: "Seni dan Desain", avatar: #imageLiteral(resourceName: "imv_art_and_design")),
             User(name: "Olahraga", avatar: #imageLiteral(resourceName: "imv_sports")),

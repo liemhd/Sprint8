@@ -27,6 +27,10 @@
 		18246CFF23F2579B001B2B38 /* InfoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18246CFE23F2579B001B2B38 /* InfoUser.swift */; };
 		18246D0223F28573001B2B38 /* EmailSuccesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18246D0023F28573001B2B38 /* EmailSuccesTableViewCell.swift */; };
 		18246D0323F28573001B2B38 /* EmailSuccesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18246D0123F28573001B2B38 /* EmailSuccesTableViewCell.xib */; };
+		182C954523FE1F52001BB238 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C954423FE1F52001BB238 /* LoginView.swift */; };
+		182C954723FE1F62001BB238 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182C954623FE1F62001BB238 /* LoginView.xib */; };
+		182C954B23FE2060001BB238 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C954923FE2060001BB238 /* LoginTableViewCell.swift */; };
+		182C954C23FE2060001BB238 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182C954A23FE2060001BB238 /* LoginTableViewCell.xib */; };
 		187C44D023EBF4E10080C103 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C44CF23EBF4E10080C103 /* Protocol.swift */; };
 		187C44D323EBF5F80080C103 /* InputVerificationCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C44D123EBF5F80080C103 /* InputVerificationCodeTableViewCell.swift */; };
 		187C44D423EBF5F80080C103 /* InputVerificationCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187C44D223EBF5F80080C103 /* InputVerificationCodeTableViewCell.xib */; };
@@ -84,6 +88,11 @@
 		18246CFE23F2579B001B2B38 /* InfoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUser.swift; sourceTree = "<group>"; };
 		18246D0023F28573001B2B38 /* EmailSuccesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSuccesTableViewCell.swift; sourceTree = "<group>"; };
 		18246D0123F28573001B2B38 /* EmailSuccesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailSuccesTableViewCell.xib; sourceTree = "<group>"; };
+		182C954423FE1F52001BB238 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		182C954623FE1F62001BB238 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		182C954923FE2060001BB238 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		182C954A23FE2060001BB238 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
+		182C954D23FE49C6001BB238 /* Sprint8.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sprint8.entitlements; sourceTree = "<group>"; };
 		187C44CF23EBF4E10080C103 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		187C44D123EBF5F80080C103 /* InputVerificationCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputVerificationCodeTableViewCell.swift; sourceTree = "<group>"; };
 		187C44D223EBF5F80080C103 /* InputVerificationCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputVerificationCodeTableViewCell.xib; sourceTree = "<group>"; };
@@ -151,6 +160,7 @@
 		181065BD23E90D9F005C62A1 /* Sprint8 */ = {
 			isa = PBXGroup;
 			children = (
+				182C954D23FE49C6001BB238 /* Sprint8.entitlements */,
 				187C44CE23EBF4D20080C103 /* Protocol */,
 				18E9829E23EAB39300C7A11D /* Constants */,
 				181065E623E91CF5005C62A1 /* Model */,
@@ -167,8 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				18A3F63F23F4F0BE007B2964 /* HeaderView */,
-				18AA88E123F65AC100ACD5B5 /* AboutYou */,
-				18AA88E223F65ADE00ACD5B5 /* AddInfomation */,
+				18AA88E123F65AC100ACD5B5 /* AboutYouView */,
+				18AA88E223F65ADE00ACD5B5 /* AddInfomationView */,
+				182C954323FE1F2D001BB238 /* LoginView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,8 +198,9 @@
 		181065DC23E91A61005C62A1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				18AA88E323F65B1A00ACD5B5 /* AboutYou */,
-				18AA88E423F65B3400ACD5B5 /* AddInfomation */,
+				18AA88E323F65B1A00ACD5B5 /* AboutYouCell */,
+				18AA88E423F65B3400ACD5B5 /* AddInfomationCell */,
+				182C954823FE2032001BB238 /* LoginCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -229,6 +241,24 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		182C954323FE1F2D001BB238 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				182C954423FE1F52001BB238 /* LoginView.swift */,
+				182C954623FE1F62001BB238 /* LoginView.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		182C954823FE2032001BB238 /* LoginCell */ = {
+			isa = PBXGroup;
+			children = (
+				182C954923FE2060001BB238 /* LoginTableViewCell.swift */,
+				182C954A23FE2060001BB238 /* LoginTableViewCell.xib */,
+			);
+			path = LoginCell;
+			sourceTree = "<group>";
+		};
 		187C44CE23EBF4D20080C103 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +276,7 @@
 			path = HeaderView;
 			sourceTree = "<group>";
 		};
-		18AA88E123F65AC100ACD5B5 /* AboutYou */ = {
+		18AA88E123F65AC100ACD5B5 /* AboutYouView */ = {
 			isa = PBXGroup;
 			children = (
 				187E16C623E9611B0007DE3C /* ListUserView.swift */,
@@ -256,10 +286,10 @@
 				18E9829823EA5EE600C7A11D /* InputEmailView.swift */,
 				18E9829A23EA5EF600C7A11D /* InputEmailView.xib */,
 			);
-			path = AboutYou;
+			path = AboutYouView;
 			sourceTree = "<group>";
 		};
-		18AA88E223F65ADE00ACD5B5 /* AddInfomation */ = {
+		18AA88E223F65ADE00ACD5B5 /* AddInfomationView */ = {
 			isa = PBXGroup;
 			children = (
 				18AA88E523F65BA600ACD5B5 /* InputYourIDNumberView.swift */,
@@ -268,10 +298,10 @@
 				18AA88EF23F6886100ACD5B5 /* YourAddressView.xib */,
 				18AA88F523F695A100ACD5B5 /* ProvinceView */,
 			);
-			path = AddInfomation;
+			path = AddInfomationView;
 			sourceTree = "<group>";
 		};
-		18AA88E323F65B1A00ACD5B5 /* AboutYou */ = {
+		18AA88E323F65B1A00ACD5B5 /* AboutYouCell */ = {
 			isa = PBXGroup;
 			children = (
 				181065DD23E91A8E005C62A1 /* YourGreetingTableViewCell.swift */,
@@ -285,10 +315,10 @@
 				18246D0023F28573001B2B38 /* EmailSuccesTableViewCell.swift */,
 				18246D0123F28573001B2B38 /* EmailSuccesTableViewCell.xib */,
 			);
-			path = AboutYou;
+			path = AboutYouCell;
 			sourceTree = "<group>";
 		};
-		18AA88E423F65B3400ACD5B5 /* AddInfomation */ = {
+		18AA88E423F65B3400ACD5B5 /* AddInfomationCell */ = {
 			isa = PBXGroup;
 			children = (
 				18AA88E923F65DAF00ACD5B5 /* IdCardTableViewCell.swift */,
@@ -298,7 +328,7 @@
 				188CDC3723F82180008FF3FF /* AddressDetailTableViewCell.swift */,
 				188CDC3823F82180008FF3FF /* AddressDetailTableViewCell.xib */,
 			);
-			path = AddInfomation;
+			path = AddInfomationCell;
 			sourceTree = "<group>";
 		};
 		18AA88F523F695A100ACD5B5 /* ProvinceView */ = {
@@ -369,6 +399,11 @@
 				TargetAttributes = {
 					181065BA23E90D9F005C62A1 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -397,10 +432,12 @@
 			files = (
 				18A3F64323F4F11E007B2964 /* HeaderView.xib in Resources */,
 				181065C923E90DA0005C62A1 /* LaunchScreen.storyboard in Resources */,
+				182C954723FE1F62001BB238 /* LoginView.xib in Resources */,
 				18AA88F423F68B0000ACD5B5 /* AddressTableViewCell.xib in Resources */,
 				181065C623E90DA0005C62A1 /* Assets.xcassets in Resources */,
 				18E982A423EACF8F00C7A11D /* VerificationCodeTableViewCell.xib in Resources */,
 				187C44D423EBF5F80080C103 /* InputVerificationCodeTableViewCell.xib in Resources */,
+				182C954C23FE2060001BB238 /* LoginTableViewCell.xib in Resources */,
 				18AA88F023F6886100ACD5B5 /* YourAddressView.xib in Resources */,
 				181065C423E90D9F005C62A1 /* Main.storyboard in Resources */,
 				18246D0323F28573001B2B38 /* EmailSuccesTableViewCell.xib in Resources */,
@@ -481,6 +518,7 @@
 				18AA88DF23F6573E00ACD5B5 /* AddInfomationViewController.swift in Sources */,
 				18E9829923EA5EE600C7A11D /* InputEmailView.swift in Sources */,
 				18E982A323EACF8F00C7A11D /* VerificationCodeTableViewCell.swift in Sources */,
+				182C954B23FE2060001BB238 /* LoginTableViewCell.swift in Sources */,
 				181065C123E90D9F005C62A1 /* HomeViewController.swift in Sources */,
 				18AA88F323F68B0000ACD5B5 /* AddressTableViewCell.swift in Sources */,
 				181065BF23E90D9F005C62A1 /* AppDelegate.swift in Sources */,
@@ -504,6 +542,7 @@
 				18AA88EB23F65DAF00ACD5B5 /* IdCardTableViewCell.swift in Sources */,
 				181065DF23E91A8E005C62A1 /* YourGreetingTableViewCell.swift in Sources */,
 				181065EB23E94EFB005C62A1 /* InputDataTableViewCell.swift in Sources */,
+				182C954523FE1F52001BB238 /* LoginView.swift in Sources */,
 				18AA88F723F695F800ACD5B5 /* ProvinceView.swift in Sources */,
 				18A5AED023F1092200BDCE63 /* String + Extension.swift in Sources */,
 			);
