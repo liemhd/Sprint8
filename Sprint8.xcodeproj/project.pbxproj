@@ -427,9 +427,18 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sprint8/Pods-Sprint8-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sprint8/Pods-Sprint8-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sprint8/Pods-Sprint8-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -652,7 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DuyLiem.Sprint8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -671,7 +680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DuyLiem.Sprint8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
