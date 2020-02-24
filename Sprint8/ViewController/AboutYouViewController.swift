@@ -24,6 +24,7 @@ final class AboutYouViewController: UIViewController {
     private var countPageControl: Int = 0
     private var btnActionNext: CustomButton = CustomButton()
     var infoUser: InfoUser?
+    var typeView: String = ""
     
     var callBack: ((_ process: Int, _ isHaveData: Bool, _ data: InfoUser?) -> Void)?
     
@@ -32,11 +33,19 @@ final class AboutYouViewController: UIViewController {
         super.viewDidLoad()
         
         self.setupToHideKeyboardOnTapOnView()
-        addSubViewListUser()
+        checkAddView()
         haveData()
     }
     
     //MARK: - Function
+    private func checkAddView() {
+        if typeView == Constants.login {
+            addSubViewLogin()
+        } else {
+            addSubViewListUser()
+        }
+    }
+    
     private func addSubViewListUser() {
         if let listUserView = Bundle.main.loadNibNamed(ListUserView.name, owner: self, options: nil)?.first as? ListUserView {
             listUserView.frame = viewContent.bounds
@@ -60,6 +69,15 @@ final class AboutYouViewController: UIViewController {
             inputEmailView.inputEmailDelegate = self
             inputEmailView.infoUser = infoUser
             viewContent.addSubview(inputEmailView)
+        }
+    }
+    
+    private func addSubViewLogin() {
+        if let loginView = Bundle.main.loadNibNamed(LoginView.name, owner: self, options: nil)?.first as? LoginView {
+            loginView.frame = viewContent.bounds
+//            inputNameView.inputNameDelegate = self
+//            inputNameView.infoUser = infoUser
+            viewContent.addSubview(loginView)
         }
     }
     

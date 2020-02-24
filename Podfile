@@ -5,8 +5,13 @@ target 'Sprint8' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'SnapKit', '~> 5.0.0'
-pod 'IQKeyboardManager'
+  # Login Facebook
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'IQKeyboardManager'
 
   # Pods for Sprint8
 

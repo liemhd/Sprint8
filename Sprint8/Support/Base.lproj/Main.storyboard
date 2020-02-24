@@ -39,6 +39,13 @@
                                     <action selector="btnActionInterests:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gp8-Nw-oQb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrW-BR-KoH">
+                                <rect key="frame" x="168.66666666666666" y="372" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="btnActionLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9m-gU-0If"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -46,7 +53,9 @@
                             <constraint firstItem="ssy-dU-6ZK" firstAttribute="height" secondItem="3Sb-RW-fvg" secondAttribute="height" id="Dx9-PA-lZP"/>
                             <constraint firstItem="ssy-dU-6ZK" firstAttribute="top" secondItem="3Sb-RW-fvg" secondAttribute="bottom" constant="30" id="EAy-oM-suz"/>
                             <constraint firstItem="ssy-dU-6ZK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nsb-cx-aUI"/>
+                            <constraint firstItem="NrW-BR-KoH" firstAttribute="top" secondItem="jgp-0M-B51" secondAttribute="bottom" constant="30" id="VXH-RZ-gzw"/>
                             <constraint firstItem="ssy-dU-6ZK" firstAttribute="width" secondItem="3Sb-RW-fvg" secondAttribute="width" id="XKi-Nw-8WX"/>
+                            <constraint firstItem="NrW-BR-KoH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMi-yS-biy"/>
                             <constraint firstItem="jgp-0M-B51" firstAttribute="centerX" secondItem="ssy-dU-6ZK" secondAttribute="centerX" id="gSe-lB-ngp"/>
                             <constraint firstItem="3Sb-RW-fvg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="ndH-pt-xte"/>
                             <constraint firstItem="jgp-0M-B51" firstAttribute="top" secondItem="ssy-dU-6ZK" secondAttribute="bottom" constant="28" id="pES-HN-Nk8"/>

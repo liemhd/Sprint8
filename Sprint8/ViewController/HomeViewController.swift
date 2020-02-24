@@ -72,5 +72,15 @@ final class HomeViewController: UIViewController {
         
         present(interestVC, animated: true, completion: nil)
     }
+    
+    @IBAction func btnActionLogin(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let aboutYouVC = sb.instantiateViewController(withIdentifier: AboutYouViewController.name) as? AboutYouViewController else {
+            return
+        }
+        aboutYouVC.typeView = Constants.login
+        
+        present(aboutYouVC, animated: true, completion: nil)
+    }
 }
 
